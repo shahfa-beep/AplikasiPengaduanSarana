@@ -39,16 +39,14 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const Padding(padding: EdgeInsets.all(16)),
-            
+
             // Tombol untuk pindah/terhubung ke halaman Login
             ElevatedButton(
               child: const Text("Ke Halaman Login User"),
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => const Login(),
-                  ),
+                  MaterialPageRoute(builder: (context) => const Login()),
                 );
               },
             ),

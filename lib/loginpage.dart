@@ -27,22 +27,15 @@ class _LoginState extends State<Login> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Ikon Avatar / Profil Bulat di atas
-              Container(
-                width: 90,
-                height: 90,
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 212, 124, 132),
-                  shape: BoxShape.circle,
-                ),
-                child: const Icon(
-                  Icons.person,
-                  size: 60,
-                  color: Color.fromARGB(255, 255, 255, 255),
+              Center(
+                child: Image(
+                  image: AssetImage('asset/orang-removebg-preview.png'),
+                  width: 200,
+                  height: 200,
                 ),
               ),
               const SizedBox(height: 12),
-              
+
               // Teks "Login sebagai User"
               const Text(
                 "Login sebagai\nUser",
@@ -54,7 +47,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               const SizedBox(height: 35),
-              
+
               // Input USERNAME
               SizedBox(
                 width: 300,
@@ -80,7 +73,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               const SizedBox(height: 16),
-              
+
               // Input PASSWORD
               SizedBox(
                 width: 300,
@@ -107,7 +100,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               const SizedBox(height: 28),
-              
+
               // Tombol LOGIN
               SizedBox(
                 width: 140,
